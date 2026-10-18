@@ -178,7 +178,8 @@ function demo4() {
     '<span class="k">Pair(3, 5)</span>\n' +
     '  第一个 (fst) = <span class="ok">' + esc(p.fst()) + '</span>\n' +
     '  第二个 (snd) = <span class="ok">' + esc(p.snd()) + '</span>\n' +
-    '  对调 (swap) = <span class="ok">' + esc(p.swap().fst()) + ', ' + esc(p.swap().snd()) + '</span>'
+    '  合并 (merge) = <span class="ok">' + esc(p.merge((a, b) => a + b)) + '</span>  ← 3+5\n\n' +
+    '<span class="no">两个值被捆在一起，取的时候不会拿错。</span>'
   );
 }
 
